@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120" role="img" aria-label="Mighty Spares">
+<defs><linearGradient id="brand" x1="0" x2="1"><stop offset="0" stop-color="#FF7A1A"/><stop offset="1" stop-color="#FFC233"/></linearGradient></defs>
+<style>
+ .w1{animation:w 9s linear infinite} .w2{animation:w 6s linear infinite reverse}
+ @keyframes w{to{transform:translateX(-600px)}}
+ @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<g class="w1" opacity=".35"><path fill="url(#brand)" d="M0 60 Q150 20 300 60 T600 60 T900 60 T1200 60 T1500 60 T1800 60 V120 H0Z"/></g>
+<g class="w2"><path fill="#0B1426" d="M0 80 Q150 45 300 80 T600 80 T900 80 T1200 80 T1500 80 T1800 80 V120 H0Z"/></g>
+<text x="600" y="110" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" fill="#FFC233" letter-spacing="3">DRIVE ON · MIGHTY SPARES</text>
+</svg>

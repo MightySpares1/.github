@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="How it works: search, fit check, order, delivered">
+<defs><linearGradient id="brand" x1="0" x2="1"><stop offset="0" stop-color="#FF7A1A"/><stop offset="1" stop-color="#FFC233"/></linearGradient><linearGradient id="line" gradientUnits="userSpaceOnUse" x1="180" y1="0" x2="1020" y2="0"><stop offset="0" stop-color="#FF7A1A"/><stop offset="1" stop-color="#FFC233"/></linearGradient></defs>
+<style>
+ text{font-family:'Segoe UI',Helvetica,Arial,sans-serif}
+ .t{font-size:20px;font-weight:800;fill:#F9FAFB} .s{font-size:13.5px;fill:#9CA3AF} .n{font-size:13px;font-weight:800;fill:#FFC233}
+ .track{stroke-dasharray:6 10;animation:dash 1s linear infinite}
+ .prog{stroke-dasharray:840;stroke-dashoffset:840;animation:prog 8s linear infinite}
+ .node{animation:node 8s ease-out infinite;transform-box:fill-box;transform-origin:center}
+ .ring{opacity:0;animation:ring 8s ease-out infinite;transform-box:fill-box;transform-origin:center}
+ .van{animation:van 8s linear infinite}
+ @keyframes dash{to{stroke-dashoffset:-16}}
+ @keyframes prog{0%{stroke-dashoffset:840}60%{stroke-dashoffset:0}90%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:0}}
+ @keyframes node{0%{transform:scale(.55);opacity:.35}6%{transform:scale(1.12);opacity:1}10%,88%{transform:scale(1);opacity:1}100%{transform:scale(.55);opacity:.35}}
+ @keyframes ring{0%{opacity:0;transform:scale(1)}4%{opacity:1}18%{opacity:0;transform:scale(1.5)}100%{opacity:0}}
+ @keyframes van{0%{transform:translateX(0)}60%{transform:translateX(840px)}100%{transform:translateX(840px)}}
+ @media (prefers-reduced-motion:reduce){*{animation:none!important} .prog{stroke-dashoffset:0}}
+</style>
+<rect width="1200" height="300" rx="20" fill="#0B1426"/>
+<text x="600.0" y="46" text-anchor="middle" font-size="26" font-weight="800" fill="url(#brand)">How it works</text>
+<line class="track" x1="180" y1="140" x2="1020" y2="140" stroke="#26375C" stroke-width="4"/>
+<line class="prog" x1="180" y1="140" x2="1020" y2="140" stroke="url(#line)" stroke-width="5" stroke-linecap="round"/>
+<g transform="translate(180 140)">
+  <circle r="44" fill="#16243F" stroke="#26375C" stroke-width="2"/>
+  <circle class="ring" style="animation-delay:0.0s" r="44" fill="none" stroke="#FFC233" stroke-width="4"/>
+  <g class="node" style="animation-delay:0.0s"><circle r="34" fill="url(#brand)"/><circle cx="-4" cy="-4" r="13" fill="none" stroke="#0B1426" stroke-width="5"/><line x1="6" y1="6" x2="16" y2="16" stroke="#0B1426" stroke-width="6" stroke-linecap="round"/></g>
+  <text y="80" text-anchor="middle" class="t">Search</text>
+  <text y="102" text-anchor="middle" class="s">Part name, number or category</text>
+  <text x="-38" y="-36" class="n">1</text>
+</g><g transform="translate(460 140)">
+  <circle r="44" fill="#16243F" stroke="#26375C" stroke-width="2"/>
+  <circle class="ring" style="animation-delay:1.6s" r="44" fill="none" stroke="#FFC233" stroke-width="4"/>
+  <g class="node" style="animation-delay:1.6s"><circle r="34" fill="url(#brand)"/><path d="M-15 0 L-4 11 L16 -11" stroke="#0B1426" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text y="80" text-anchor="middle" class="t">Fit check</text>
+  <text y="102" text-anchor="middle" class="s">Select make · model · year</text>
+  <text x="-38" y="-36" class="n">2</text>
+</g><g transform="translate(740 140)">
+  <circle r="44" fill="#16243F" stroke="#26375C" stroke-width="2"/>
+  <circle class="ring" style="animation-delay:3.2s" r="44" fill="none" stroke="#FFC233" stroke-width="4"/>
+  <g class="node" style="animation-delay:3.2s"><circle r="34" fill="url(#brand)"/><path d="M-18 -12 h6 l6 20 h18 l5 -14 h-26" stroke="#0B1426" stroke-width="4.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/><circle cx="-4" cy="14" r="3.5" fill="#0B1426"/><circle cx="12" cy="14" r="3.5" fill="#0B1426"/></g>
+  <text y="80" text-anchor="middle" class="t">Order</text>
+  <text y="102" text-anchor="middle" class="s">Secure checkout</text>
+  <text x="-38" y="-36" class="n">3</text>
+</g><g transform="translate(1020 140)">
+  <circle r="44" fill="#16243F" stroke="#26375C" stroke-width="2"/>
+  <circle class="ring" style="animation-delay:4.800000000000001s" r="44" fill="none" stroke="#FFC233" stroke-width="4"/>
+  <g class="node" style="animation-delay:4.800000000000001s"><circle r="34" fill="url(#brand)"/><rect x="-18" y="-14" width="36" height="28" rx="3" fill="none" stroke="#0B1426" stroke-width="4.5"/><path d="M-18 -4 h36 M-4 -14 v10" stroke="#0B1426" stroke-width="4.5"/></g>
+  <text y="80" text-anchor="middle" class="t">Delivered</text>
+  <text y="102" text-anchor="middle" class="s">Shipped to your door across AU</text>
+  <text x="-38" y="-36" class="n">4</text>
+</g>
+<g class="van"><g transform="translate(180 76)">
+  <rect x="-22" y="-12" width="30" height="20" rx="3" fill="#FFC233"/><path d="M8 -6 h9 l7 8 v6 h-16z" fill="#FF7A1A"/>
+  <circle cx="-12" cy="10" r="4.5" fill="#E5E7EB"/><circle cx="14" cy="10" r="4.5" fill="#E5E7EB"/>
+</g></g>
+</svg>

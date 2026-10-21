@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Part categories: brakes, filters and oils, ignition, suspension, electrical, lighting">
+<defs><linearGradient id="brand" x1="0" x2="1"><stop offset="0" stop-color="#FF7A1A"/><stop offset="1" stop-color="#FFC233"/></linearGradient></defs>
+<style>
+ text{font-family:'Segoe UI',Helvetica,Arial,sans-serif}
+ .h{font-size:30px;font-weight:800;fill:#0B1426}
+ .t{font-size:19px;font-weight:800;fill:#F9FAFB} .s{font-size:13px;fill:#9CA3AF}
+ .card{opacity:0;animation:pop .6s ease-out forwards}
+ .spin{animation:rot 1.6s linear infinite}
+ .drip{animation:drip 1.4s ease-in infinite}
+ .spark{animation:spark .9s steps(2) infinite}
+ .coil{animation:coil 1s ease-in-out infinite alternate;transform-origin:0 0}
+ .bar{opacity:.15;animation:charge 1.8s linear infinite}
+ .ray{animation:ray 1.2s ease-in-out infinite}
+ .bg{fill:#0B1426}
+ @keyframes pop{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+ @keyframes rot{to{transform:rotate(360deg)}}
+ @keyframes drip{0%{transform:translateY(0);opacity:1}80%{transform:translateY(34px);opacity:1}100%{transform:translateY(38px);opacity:0}}
+ @keyframes spark{0%{opacity:1}100%{opacity:0}}
+ @keyframes coil{to{transform:scaleY(.72)}}
+ @keyframes charge{0%,10%{opacity:.15}25%,85%{opacity:1}100%{opacity:.15}}
+ @keyframes ray{0%,100%{opacity:.2}50%{opacity:1}}
+ @media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important}}
+</style>
+<rect width="1200" height="320" rx="20" class="bg"/>
+<text x="600.0" y="44" text-anchor="middle" font-size="26" font-weight="800" fill="url(#brand)">What we stock</text>
+<g class="card" style="animation-delay:0.00s">
+  <g transform="translate(32 70)">
+    <rect width="176" height="220" rx="18" fill="#16243F" stroke="#26375C"/>
+    <rect width="176" height="5" rx="2.5" fill="url(#brand)"/>
+    <g transform="translate(88.0 85)"><g class="spin"><circle r="36" fill="#9CA3AF"/><circle r="31" fill="none" stroke="#6B7280" stroke-width="2"/><circle cx="0" cy="-24" r="3.2" fill="#16243F"/><circle cx="21" cy="-12" r="3.2" fill="#16243F"/><circle cx="21" cy="12" r="3.2" fill="#16243F"/><circle cx="0" cy="24" r="3.2" fill="#16243F"/><circle cx="-21" cy="12" r="3.2" fill="#16243F"/><circle cx="-21" cy="-12" r="3.2" fill="#16243F"/><circle r="12" fill="#4B5563"/><circle r="4" fill="#16243F"/></g>
+        <path d="M18 -40 Q46 -30 46 0 L36 0 Q36 -22 14 -30 Z" fill="#FF7A1A"/></g>
+    <text x="88.0" y="168" text-anchor="middle" class="t">Brakes</text>
+    <text x="88.0" y="192" text-anchor="middle" class="s">Pads · Rotors · Calipers</text>
+  </g></g><g class="card" style="animation-delay:0.15s">
+  <g transform="translate(224 70)">
+    <rect width="176" height="220" rx="18" fill="#16243F" stroke="#26375C"/>
+    <rect width="176" height="5" rx="2.5" fill="url(#brand)"/>
+    <g transform="translate(88.0 85)"><path d="M-30 -6 L10 -6 L22 -18 L40 -22 L40 -16 L26 -10 L20 24 L-30 24 Z" fill="#FFC233"/><rect x="-22" y="-14" width="16" height="8" rx="2" fill="#E2A21A"/>
+        <path class="drip" d="M40 -14 Q44 -6 40 -2 Q36 -6 40 -14Z" fill="#FF7A1A"/></g>
+    <text x="88.0" y="168" text-anchor="middle" class="t">Filters &amp; Oils</text>
+    <text x="88.0" y="192" text-anchor="middle" class="s">Oil · Air · Cabin</text>
+  </g></g><g class="card" style="animation-delay:0.30s">
+  <g transform="translate(416 70)">
+    <rect width="176" height="220" rx="18" fill="#16243F" stroke="#26375C"/>
+    <rect width="176" height="5" rx="2.5" fill="url(#brand)"/>
+    <g transform="translate(88.0 85)"><rect x="-9" y="-44" width="18" height="12" rx="2" fill="#9CA3AF"/><rect x="-13" y="-32" width="26" height="30" rx="5" fill="#F3F4F6"/>
+        <rect x="-15" y="-2" width="30" height="12" fill="#6B7280"/><rect x="-9" y="10" width="18" height="16" fill="#9CA3AF"/>
+        <path d="M-9 13h18M-9 18h18M-9 23h18" stroke="#6B7280" stroke-width="1.5"/><path d="M0 26v8 h8" stroke="#9CA3AF" stroke-width="3" fill="none"/>
+        <path class="spark" d="M4 36 l6 6 -5 1 8 8" stroke="#FFC233" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <text x="88.0" y="168" text-anchor="middle" class="t">Ignition</text>
+    <text x="88.0" y="192" text-anchor="middle" class="s">Plugs · Coils · Leads</text>
+  </g></g><g class="card" style="animation-delay:0.45s">
+  <g transform="translate(608 70)">
+    <rect width="176" height="220" rx="18" fill="#16243F" stroke="#26375C"/>
+    <rect width="176" height="5" rx="2.5" fill="url(#brand)"/>
+    <g transform="translate(88.0 85)"><rect x="-28" y="-44" width="56" height="8" rx="3" fill="#9CA3AF"/><g class="coil"><path d="M-22 -28 Q0 -36 22 -23" stroke="#FF7A1A" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M-22 -17 Q0 -25 22 -12" stroke="#FF7A1A" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M-22 -6 Q0 -14 22 -1" stroke="#FF7A1A" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M-22 5 Q0 -3 22 10" stroke="#FF7A1A" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M-22 16 Q0 8 22 21" stroke="#FF7A1A" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M-22 27 Q0 19 22 32" stroke="#FF7A1A" stroke-width="6" fill="none" stroke-linecap="round"/></g><rect x="-28" y="36" width="56" height="8" rx="3" fill="#9CA3AF"/></g>
+    <text x="88.0" y="168" text-anchor="middle" class="t">Suspension</text>
+    <text x="88.0" y="192" text-anchor="middle" class="s">Shocks · Springs · Struts</text>
+  </g></g><g class="card" style="animation-delay:0.60s">
+  <g transform="translate(800 70)">
+    <rect width="176" height="220" rx="18" fill="#16243F" stroke="#26375C"/>
+    <rect width="176" height="5" rx="2.5" fill="url(#brand)"/>
+    <g transform="translate(88.0 85)"><rect x="-34" y="-22" width="68" height="50" rx="6" fill="none" stroke="#E5E7EB" stroke-width="4"/><rect x="-24" y="-30" width="12" height="8" rx="2" fill="#E5E7EB"/><rect x="12" y="-30" width="12" height="8" rx="2" fill="#E5E7EB"/><rect class="bar" style="animation-delay:0.0s" x="-26" y="-12" width="10" height="30" rx="2" fill="#34D399"/><rect class="bar" style="animation-delay:0.35s" x="-12" y="-12" width="10" height="30" rx="2" fill="#34D399"/><rect class="bar" style="animation-delay:0.7s" x="2" y="-12" width="10" height="30" rx="2" fill="#34D399"/><rect class="bar" style="animation-delay:1.0499999999999998s" x="16" y="-12" width="10" height="30" rx="2" fill="#34D399"/></g>
+    <text x="88.0" y="168" text-anchor="middle" class="t">Electrical</text>
+    <text x="88.0" y="192" text-anchor="middle" class="s">Batteries · Alternators</text>
+  </g></g><g class="card" style="animation-delay:0.75s">
+  <g transform="translate(992 70)">
+    <rect width="176" height="220" rx="18" fill="#16243F" stroke="#26375C"/>
+    <rect width="176" height="5" rx="2.5" fill="url(#brand)"/>
+    <g transform="translate(88.0 85)"><path d="M10 -30 Q-34 -30 -34 0 Q-34 30 10 30 Z" fill="#FFC233"/><path d="M4 -20 Q-22 -20 -22 0 Q-22 20 4 20Z" fill="#FFF3C4"/><line class="ray" style="animation-delay:0.0s" x1="14" y1="-18" x2="44" y2="-25.2" stroke="#FFE7A3" stroke-width="4" stroke-linecap="round"/><line class="ray" style="animation-delay:0.15s" x1="14" y1="-6" x2="44" y2="-8.399999999999999" stroke="#FFE7A3" stroke-width="4" stroke-linecap="round"/><line class="ray" style="animation-delay:0.3s" x1="14" y1="6" x2="44" y2="8.399999999999999" stroke="#FFE7A3" stroke-width="4" stroke-linecap="round"/><line class="ray" style="animation-delay:0.44999999999999996s" x1="14" y1="18" x2="44" y2="25.2" stroke="#FFE7A3" stroke-width="4" stroke-linecap="round"/></g>
+    <text x="88.0" y="168" text-anchor="middle" class="t">Lighting</text>
+    <text x="88.0" y="192" text-anchor="middle" class="s">Headlights · Globes · LED</text>
+  </g></g>
+</svg>

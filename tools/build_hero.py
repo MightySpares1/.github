@@ -1,0 +1,106 @@
+from gear import gear
+G1=gear(70,56,12,22); G2=gear(44,34,8,13)
+svg=f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="Mighty Spares — car parts delivered Australia-wide">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#0B1426"/><stop offset="1" stop-color="#16243F"/>
+  </linearGradient>
+  <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FF7A1A"/><stop offset="1" stop-color="#FFC233"/>
+  </linearGradient>
+  <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FF8A2B"/><stop offset="1" stop-color="#E2560B"/>
+  </linearGradient>
+  <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFE7A3" stop-opacity=".5"/><stop offset="1" stop-color="#FFE7A3" stop-opacity="0"/>
+  </linearGradient>
+  <clipPath id="typeclip"><rect class="typer" x="0" y="0" width="0" height="420"/></clipPath>
+  <g id="wheel">
+    <circle r="22" fill="#111827"/><circle r="12" fill="#9CA3AF"/>
+    <g class="spin"><rect x="-1.8" y="-12" width="3.6" height="24" fill="#374151"/><rect x="-12" y="-1.8" width="24" height="3.6" fill="#374151"/></g>
+    <circle r="3.5" fill="#E5E7EB"/>
+  </g>
+</defs>
+<style>
+  text{{font-family:'Segoe UI',Helvetica,Arial,sans-serif}}
+  .title{{font-size:76px;font-weight:900;letter-spacing:4px;opacity:0;animation:rise 1s .2s ease-out forwards}}
+  .tag{{font-size:26px;font-weight:600;fill:#E5E7EB}}
+  .typer{{animation:type 3.2s 1.2s steps(44,end) forwards}}
+  .caret{{animation:caret 3.2s 1.2s steps(44,end) forwards, blink .8s step-end infinite}}
+  .chip{{opacity:0;animation:rise .6s ease-out forwards}}
+  .chip text{{font-size:15px;font-weight:700;fill:#0B1426}}
+  .lane{{stroke-dasharray:60 50;animation:lane .6s linear infinite}}
+  .car{{animation:bob .5s ease-in-out infinite alternate}}
+  .spin{{animation:rot .35s linear infinite;transform-box:fill-box;transform-origin:center}}
+  .g1{{animation:rot 8s linear infinite;transform-box:fill-box;transform-origin:center}}
+  .g2{{animation:rotr 5.3s linear infinite;transform-box:fill-box;transform-origin:center}}
+  .star{{animation:tw 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}}
+  .speed{{stroke-dasharray:70 200;animation:speed .9s linear infinite}}
+  .hill{{animation:hill 18s linear infinite}}
+  @keyframes rise{{from{{opacity:0;transform:translateY(18px)}}to{{opacity:1;transform:none}}}}
+  @keyframes type{{to{{width:600px}}}}
+  @keyframes caret{{from{{transform:translateX(0)}}to{{transform:translateX(538px)}}}}
+  @keyframes blink{{50%{{opacity:0}}}}
+  @keyframes lane{{to{{stroke-dashoffset:110}}}}
+  @keyframes bob{{to{{transform:translateY(-3px)}}}}
+  @keyframes rot{{to{{transform:rotate(360deg)}}}}
+  @keyframes rotr{{to{{transform:rotate(-360deg)}}}}
+  @keyframes tw{{0%,100%{{opacity:.35;transform:scale(.8)}}50%{{opacity:1;transform:scale(1.15)}}}}
+  @keyframes speed{{from{{stroke-dashoffset:0}}to{{stroke-dashoffset:-270}}}}
+  @keyframes hill{{to{{transform:translateX(-600px)}}}}
+  @media (prefers-reduced-motion:reduce){{*{{animation-duration:0s!important;animation-iteration-count:1!important}}}}
+</style>
+<rect width="1200" height="420" fill="url(#sky)"/>
+<!-- Southern Cross -->
+<g fill="#FFFFFF">
+  <path class="star" style="animation-delay:0s" d="M1010 52l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
+  <path class="star" style="animation-delay:.6s" d="M1062 92l2.5 6.5 6.5 2.5-6.5 2.5-2.5 6.5-2.5-6.5-6.5-2.5 6.5-2.5z"/>
+  <path class="star" style="animation-delay:1.2s" d="M1018 140l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
+  <path class="star" style="animation-delay:1.8s" d="M968 100l2.5 6.5 6.5 2.5-6.5 2.5-2.5 6.5-2.5-6.5-6.5-2.5 6.5-2.5z"/>
+  <circle class="star" style="animation-delay:.9s" cx="1034" cy="112" r="2.2"/>
+</g>
+<!-- gears -->
+<g opacity=".18" fill="#FFC233" fill-rule="evenodd">
+  <g transform="translate(1130 215)"><path class="g1" d="{G1}"/></g>
+  <g transform="translate(1046 268)"><path class="g2" d="{G2}"/></g>
+</g>
+<!-- rolling hills -->
+<g class="hill" fill="#1E3157" opacity=".8">
+  <path d="M0 330 Q150 270 300 330 T600 330 T900 330 T1200 330 T1500 330 T1800 330 V340 H0Z"/>
+</g>
+<!-- road -->
+<rect y="330" width="1200" height="90" fill="#0F172A"/>
+<rect y="330" width="1200" height="4" fill="#FFC233" opacity=".85"/>
+<line class="lane" x1="0" y1="378" x2="1260" y2="378" stroke="#E5E7EB" stroke-width="5" opacity=".7"/>
+<!-- text -->
+<text class="title" x="60" y="140" fill="url(#brand)">MIGHTY SPARES</text>
+<g clip-path="url(#typeclip)">
+  <text class="tag" x="62" y="192">Car parts that fit. Delivered Australia-wide.</text>
+</g>
+<rect class="caret" x="64" y="170" width="3" height="28" fill="#FFC233"/>
+<g class="chip" style="animation-delay:4.4s"><rect x="60" y="222" rx="15" width="168" height="30" fill="#FFC233"/><text x="76" y="242">OEM &amp; Aftermarket</text></g>
+<g class="chip" style="animation-delay:4.7s"><rect x="240" y="222" rx="15" width="150" height="30" fill="#FF9A3D"/><text x="256" y="242">Vehicle fit check</text></g>
+<g class="chip" style="animation-delay:5.0s"><rect x="402" y="222" rx="15" width="140" height="30" fill="#FFD670"/><text x="418" y="242">Ships across AU</text></g>
+<!-- car -->
+<g transform="translate(640 0)">
+  <g class="speed" stroke="#FFC233" stroke-width="3" stroke-linecap="round" opacity=".6">
+    <line x1="-40" y1="290" x2="-200" y2="290"/>
+    <line x1="-60" y1="306" x2="-240" y2="306" style="animation-delay:.3s"/>
+    <line x1="-30" y1="274" x2="-170" y2="274" style="animation-delay:.6s"/>
+  </g>
+  <g class="car">
+    <path d="M312 288 L470 262 L470 318 Z" fill="url(#beam)"/>
+    <!-- ute body -->
+    <path d="M10 318 L10 288 Q10 278 22 276 L120 272 L150 236 Q156 230 166 230 L238 230 Q250 230 258 240 L284 272 L300 276 Q312 280 312 292 L312 318 Z" fill="url(#body)"/>
+    <path d="M162 240 L232 240 Q240 240 246 248 L266 272 L146 272 Z" fill="#9FD3F2" opacity=".85"/>
+    <rect x="200" y="240" width="5" height="32" fill="url(#body)"/>
+    <rect x="22" y="282" width="98" height="6" rx="3" fill="#B84408" opacity=".6"/>
+    <rect x="300" y="284" width="12" height="8" rx="2" fill="#FFE7A3"/>
+    <rect x="10" y="284" width="8" height="10" rx="2" fill="#EF4444"/>
+    <text x="150" y="304" font-size="13" font-weight="900" fill="#0B1426" opacity=".75" style="font-family:'Segoe UI',Arial,sans-serif">MIGHTY</text>
+    <use href="#wheel" x="74" y="320"/>
+    <use href="#wheel" x="250" y="320"/>
+  </g>
+</g>
+</svg>'''
+open('../profile/assets/hero.svg','w').write(svg)
