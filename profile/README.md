@@ -1,11 +1,10 @@
 <div align="center">
 
-<img src="./assets/hero.svg" alt="Mighty Spares — Car parts that fit. Delivered Australia-wide." width="100%"/>
+<a href="https://mightyspares.com.au/"><img src="./assets/hero.svg" alt="Mighty Spares — Car parts that fit. Delivered Australia-wide." width="100%"/></a>
 
 ### 🇦🇺 Australia's go-to shop for car parts that actually fit your car.
 
-<!-- TODO: replace the link below with the live shop URL -->
-<a href="#"><img src="https://img.shields.io/badge/Shop_now-FF7A1A?style=for-the-badge&logoColor=white" alt="Shop now"/></a>
+<a href="https://mightyspares.com.au/"><img src="https://img.shields.io/badge/Shop_now-FF7A1A?style=for-the-badge&logoColor=white" alt="Shop now"/></a>
 <a href="#%EF%B8%8F-from-search-to-your-driveway"><img src="https://img.shields.io/badge/How_it_works-16243F?style=for-the-badge" alt="How it works"/></a>
 <a href="#-get-in-touch"><img src="https://img.shields.io/badge/Contact-FFC233?style=for-the-badge&logoColor=0B1426" alt="Contact"/></a>
 
@@ -25,7 +24,7 @@ We bring **OEM and quality aftermarket parts** together in one catalogue, and he
 <br/>
 
 <div align="center">
-<img src="./assets/categories.svg" alt="What we stock: Brakes, Filters & Oils, Ignition, Suspension, Electrical, Lighting" width="100%"/>
+<a href="https://mightyspares.com.au/"><img src="./assets/categories.svg" alt="What we stock: Brakes, Filters & Oils, Ignition, Suspension, Electrical, Lighting" width="100%"/></a>
 </div>
 
 <br/>
@@ -33,7 +32,7 @@ We bring **OEM and quality aftermarket parts** together in one catalogue, and he
 ## ⚙️ From search to your driveway
 
 <div align="center">
-<img src="./assets/how-it-works.svg" alt="1. Search  2. Fit check  3. Order  4. Delivered" width="100%"/>
+<a href="https://mightyspares.com.au/"><img src="./assets/how-it-works.svg" alt="1. Search  2. Fit check  3. Order  4. Delivered" width="100%"/></a>
 </div>
 
 <br/>
@@ -52,13 +51,12 @@ Our platform is built to handle a catalogue of **1M+ parts** and stay fast every
 
 ## 📬 Get in touch
 
-<!-- TODO: fill in real contact details -->
 | | |
 |---|---|
-| 🌐 Website | _coming soon_ |
-| ✉️ Email | _coming soon_ |
+| 🌐 Website | [mightyspares.com.au](https://mightyspares.com.au/) |
+| ✉️ Email | [sales@mightyspares.com.au](mailto:sales@mightyspares.com.au) |
 | 🐙 GitHub | [@MightySpares1](https://github.com/MightySpares1) |
 
 <div align="center">
-<img src="./assets/footer.svg" alt="Drive on · Mighty Spares" width="100%"/>
+<a href="https://mightyspares.com.au/"><img src="./assets/footer.svg" alt="Drive on · Mighty Spares" width="100%"/></a>
 </div>

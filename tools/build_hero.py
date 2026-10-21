@@ -89,17 +89,21 @@ svg=f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBo
     <line x1="-30" y1="274" x2="-170" y2="274" style="animation-delay:.6s"/>
   </g>
   <g class="car">
-    <path d="M312 288 L470 262 L470 318 Z" fill="url(#beam)"/>
-    <!-- ute body -->
-    <path d="M10 318 L10 288 Q10 278 22 276 L120 272 L150 236 Q156 230 166 230 L238 230 Q250 230 258 240 L284 272 L300 276 Q312 280 312 292 L312 318 Z" fill="url(#body)"/>
-    <path d="M162 240 L232 240 Q240 240 246 248 L266 272 L146 272 Z" fill="#9FD3F2" opacity=".85"/>
-    <rect x="200" y="240" width="5" height="32" fill="url(#body)"/>
-    <rect x="22" y="282" width="98" height="6" rx="3" fill="#B84408" opacity=".6"/>
-    <rect x="300" y="284" width="12" height="8" rx="2" fill="#FFE7A3"/>
-    <rect x="10" y="284" width="8" height="10" rx="2" fill="#EF4444"/>
-    <text x="150" y="304" font-size="13" font-weight="900" fill="#0B1426" opacity=".75" style="font-family:'Segoe UI',Arial,sans-serif">MIGHTY</text>
+    <path d="M314 272 L480 244 L480 306 Z" fill="url(#beam)"/>
+    <!-- hatchback, facing right -->
+    <path d="M12 318 L12 272 Q12 258 26 256 L40 254 L68 212 Q72 206 82 206 L146 206 Q158 206 168 214 L214 250 L290 258 Q314 262 316 284 L316 318 Z" fill="url(#body)"/>
+    <path d="M80 218 L114 218 L114 248 L58 248 Z" fill="#9FD3F2" opacity=".85"/>
+    <path d="M122 218 L146 218 Q154 218 162 224 L194 248 L122 248 Z" fill="#9FD3F2" opacity=".85"/>
+    <rect x="20" y="280" width="290" height="5" rx="2.5" fill="#B84408" opacity=".55"/>
+    <rect x="300" y="268" width="14" height="9" rx="3" fill="#FFE7A3"/>
+    <rect x="12" y="262" width="8" height="12" rx="2" fill="#EF4444"/>
+    <rect x="306" y="296" width="12" height="16" rx="3" fill="#B84408" opacity=".7"/>
+    <rect x="104" y="258" width="14" height="4" rx="2" fill="#B84408" opacity=".8"/>
+    <circle cx="74" cy="320" r="28" fill="#0F172A"/>
+    <circle cx="252" cy="320" r="28" fill="#0F172A"/>
+    <text x="118" y="304" font-size="13" font-weight="900" fill="#0B1426" opacity=".75" style="font-family:'Segoe UI',Arial,sans-serif">MIGHTY</text>
     <use href="#wheel" x="74" y="320"/>
-    <use href="#wheel" x="250" y="320"/>
+    <use href="#wheel" x="252" y="320"/>
   </g>
 </g>
 </svg>'''
